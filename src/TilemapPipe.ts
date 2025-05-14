@@ -52,10 +52,10 @@ export class TilemapPipe implements RenderPipe<Tilemap>, InstructionPipe<Tilemap
     private ibLen = 0;// index buffer length
 
     /** The index buffer for the tilemaps to share. */
-    private indexBuffer: Buffer = null;
+    private readonly indexBuffer: Buffer;
 
     /** The shader used to render tilemaps. */
-    private shader: TilemapGeometry;
+    private shader: TilemapGeometry | null = null;
 
     private adaptor: TilemapAdaptor;
 
@@ -98,7 +98,7 @@ export class TilemapPipe implements RenderPipe<Tilemap>, InstructionPipe<Tilemap
     }
 
     /** @return The {@link TilemapGeometry} shader that this rendering pipeline is using. */
-    getShader(): TilemapGeometry { return this.shader; }
+    getShader(): TilemapGeometry | null { return this.shader; }
 
     destroy(): void
     {
