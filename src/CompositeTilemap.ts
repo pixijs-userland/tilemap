@@ -74,10 +74,10 @@ export class CompositeTilemap extends Container
      * The animation frame vector specifies which animation frame texture to use. If the x/y coordinate is
      * larger than the `animCountX` or `animCountY` for a specific tile, the modulus is taken.
      */
-    public tileAnim: [number, number] = null;
+    public tileAnim: [number, number] | null = null;
 
     /** The last modified tilemap. */
-    protected lastModifiedTilemap: Tilemap = null;
+    protected lastModifiedTilemap: Tilemap | null = null;
 
     private modificationMarker = 0;
     // private shadowColor = new Float32Array([0.0, 0.0, 0.0, 0.5]);
@@ -103,7 +103,7 @@ export class CompositeTilemap extends Container
      *
      * @param tileTextures - The list of tile textures that make up the tileset.
      */
-    tileset(tileTextures: Array<TextureSource>): this
+    tileset(tileTextures?: Array<TextureSource>): this
     {
         if (!tileTextures)
         {
@@ -233,7 +233,7 @@ export class CompositeTilemap extends Container
         } = {}
     ): this
     {
-        let tilemap: Tilemap = null;
+        let tilemap: Tilemap | null = null;
         const children = this.children;
 
         this.lastModifiedTilemap = null;

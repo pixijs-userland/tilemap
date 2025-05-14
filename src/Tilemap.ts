@@ -94,7 +94,7 @@ export class Tilemap extends ViewContainer
      *
      * @see CompositeTilemap.tileAnim
      */
-    public tileAnim: [number, number] = null;
+    public tileAnim: [number, number] | null = null;
 
     /**
      * This is the last uploaded size of the tilemap geometry.
@@ -134,7 +134,7 @@ export class Tilemap extends ViewContainer
         this._bounds.maxY = bounds.maxY;
     }
 
-    public batched: boolean;
+    public batched = false;
 
     /**
      * @param tileset - The tileset to use for the tilemap. This can be reset later with {@link Tilemap.setTileset}. The
@@ -401,10 +401,10 @@ export class Tilemap extends ViewContainer
     }
 
     private vbId = 0;
-    vb: TilemapGeometry = null;
-    private vbBuffer: ArrayBuffer = null;
-    private vbArray: Float32Array = null;
-    private vbInts: Uint32Array = null;
+    vb: TilemapGeometry | null = null;
+    private vbBuffer: ArrayBuffer | null = null;
+    private vbArray: Float32Array | null = null;
+    private vbInts: Uint32Array | null = null;
 
     private destroyVb(): void
     {
@@ -459,8 +459,8 @@ export class Tilemap extends ViewContainer
             this.vbInts = new Uint32Array(this.vbBuffer);
         }
 
-        const arr = this.vbArray;
-        const ints = this.vbInts;
+        const arr = this.vbArray ?? new Float32Array(this.vbBuffer);
+        const ints = this.vbInts ?? new Uint32Array(this.vbBuffer);
         let sz = 0;
         let textureId = 0;
 
