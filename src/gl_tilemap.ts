@@ -68,12 +68,12 @@ export class GlTilemapAdaptor extends TilemapAdaptor
         name: 'tilemap',
     } as const;
 
-    _shader: Shader = null;
+    _shader: Shader | null = null;
     max_textures: number = settings.TEXTURES_PER_TILEMAP;
 
     destroy(): void
     {
-        this._shader.destroy(true);
+        this._shader?.destroy(true);
         this._shader = null;
     }
 
@@ -83,7 +83,7 @@ export class GlTilemapAdaptor extends TilemapAdaptor
         const shader = this._shader;
         const tileset = tilemap.getTileset();
 
-        const tu = shader.resources.texture_uniforms;
+        const tu = shader?.resources.texture_uniforms;
 
         if (tu.uniforms.u_texture_size !== tileset.tex_sizes)
         {
@@ -95,6 +95,8 @@ export class GlTilemapAdaptor extends TilemapAdaptor
         {
             renderer.texture.bind(tileset.arr[i], i);
         }
+
+        if (!shader || !tilemap.vb) return;
 
         renderer.encoder.draw({
             geometry: tilemap.vb,

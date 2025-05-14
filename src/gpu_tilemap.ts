@@ -80,13 +80,13 @@ export class GpuTilemapAdaptor extends TilemapAdaptor
         name: 'tilemap',
     } as const;
 
-    _shader: Shader = null;
+    _shader: Shader | null = null;
     max_textures: number = settings.TEXTURES_PER_TILEMAP;
-    bind_group: BindGroup = null;
+    bind_group: BindGroup | null = null;
 
     destroy(): void
     {
-        this._shader.destroy(true);
+        this._shader?.destroy(true);
         this._shader = null;
     }
 
@@ -94,11 +94,23 @@ export class GpuTilemapAdaptor extends TilemapAdaptor
     {
         const renderer = pipe.renderer;
         const shader = this._shader;
+
+        if (!shader || !tilemap.vb) return;
+
         // GPU..
 
         shader.groups[0] = renderer.globalUniforms.bindGroup;
-        shader.groups[1] = tilemap.getTileset().getBindGroup();
-        shader.groups[2] = this.bind_group;
+
+        const tilesetBindGroup = tilemap.getTileset().getBindGroup();
+
+        if (tilesetBindGroup)
+        {
+            shader.groups[1] = tilesetBindGroup;
+        }
+        if (this.bind_group)
+        {
+            shader.groups[2] = this.bind_group;
+        }
 
         renderer.encoder.draw({
             geometry: tilemap.vb,

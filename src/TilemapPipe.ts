@@ -130,7 +130,7 @@ export class TilemapPipe implements RenderPipe<Tilemap>, InstructionPipe<Tilemap
 
     destroyRenderable(_renderable: Tilemap): void
     {
-        _renderable.vb.destroy(true);
+        _renderable.vb?.destroy(true);
         _renderable.vb = null;
     }
 
