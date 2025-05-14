@@ -402,9 +402,9 @@ export class Tilemap extends ViewContainer
 
     private vbId = 0;
     vb: TilemapGeometry = null;
-    private vbBuffer: ArrayBuffer = null;
-    private vbArray: Float32Array = null;
-    private vbInts: Uint32Array = null;
+    private vbBuffer: ArrayBuffer | null = null;
+    private vbArray: Float32Array | null = null;
+    private vbInts: Uint32Array | null = null;
 
     private destroyVb(): void
     {
@@ -459,8 +459,8 @@ export class Tilemap extends ViewContainer
             this.vbInts = new Uint32Array(this.vbBuffer);
         }
 
-        const arr = this.vbArray;
-        const ints = this.vbInts;
+        const arr = this.vbArray ?? new Float32Array(this.vbBuffer);
+        const ints = this.vbInts ?? new Uint32Array(this.vbBuffer);
         let sz = 0;
         let textureId = 0;
 
