@@ -142,7 +142,7 @@ export class TilemapPipe implements RenderPipe<Tilemap>, InstructionPipe<Tilemap
         tilemap.checkValid();
         tilemap.getTileset().update();
 
-        if (tilemap.is_valid)
+        if (tilemap.is_valid && instructionSet)
         {
             batcher.break(instructionSet);
             instructionSet.add(tilemap._instruction);
