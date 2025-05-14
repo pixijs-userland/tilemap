@@ -233,7 +233,7 @@ export class CompositeTilemap extends Container
         } = {}
     ): this
     {
-        let tilemap: Tilemap = null;
+        let tilemap: Tilemap | null = null;
         const children = this.children;
 
         this.lastModifiedTilemap = null;
