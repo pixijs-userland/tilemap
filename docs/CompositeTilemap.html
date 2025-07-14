@@ -1,0 +1,3494 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      PixiJS Tilemap API Documentation
+    </title>
+    
+    
+    <meta
+      name="description"
+      content="Documentation for PixiJS Tilemap library"
+    />
+    
+    
+    
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/googlecode.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700"
+    />
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    
+    <script>
+      var config = {"cleverLinks":false,"monospaceLinks":false,"default":{"outputSourceFiles":false},"applicationName":"PixiJS Tilemap","copyright":"PixiJS and IvanPopelyshev © 2015-2024","googleAnalytics":"UA-103772589-3","linenums":false,"meta":{"title":"PixiJS Tilemap API Documentation","description":"Documentation for PixiJS Tilemap library","keyword":""}};
+    </script>
+    
+
+    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", config.googleAnalytics]);
+      _gaq.push(["_trackPageview"]);
+
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    
+  </head>
+  <body>
+    <div id="wrap" class="clearfix">
+      
+<div class="navigation">
+    <h3 class="applicationName"><a href="index.html">PixiJS Tilemap</a></h3>
+    <button id="menuToggle" class="btn btn-link btn-lg menu-toggle">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </button>
+    <div class="search">
+        <input id="search" type="text" class="form-control input-md" placeholder="Search..." autocomplete="off">
+    </div>
+    <ul class="list">
+    
+    
+        <li class="item namespaceItem" data-name="CompositeTilemap">
+            <span class="title  ">
+                
+                
+                    <a href=CompositeTilemap.html>CompositeTilemap</a>
+                
+            </span>
+
+            
+            <ul class="classes itemMembers">
+            
+            </ul>
+
+            
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li class="parent status-deprecated" data-name="CompositeTilemap.setBitmaps"><a href="CompositeTilemap.html#setBitmaps">setBitmaps</a></li>
+            
+                <li class="parent status-deprecated" data-name="CompositeTilemap.texPerChild"><a href="CompositeTilemap.html#texPerChild">texPerChild</a></li>
+            
+                <li class="parent " data-name="CompositeTilemap.texturesPerTilemap"><a href=CompositeTilemap.html#texturesPerTilemap>texturesPerTilemap</a></li>
+            
+                <li class="parent " data-name="CompositeTilemap.tileAnim"><a href=CompositeTilemap.html#tileAnim>tileAnim</a></li>
+            
+                <li class="parent " data-name="CompositeTilemap.lastModifiedTilemap"><a href="CompositeTilemap.html#lastModifiedTilemap">lastModifiedTilemap</a></li>
+            
+            </ul>
+
+            <ul class="enums itemMembers">
+                
+            </ul>
+
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li class="parent  status-deprecated" data-name="CompositeTilemap.addFrame"><a href="CompositeTilemap.html#addFrame">addFrame</a></li>
+            
+                <li class="parent  status-deprecated" data-name="CompositeTilemap.addRect"><a href="CompositeTilemap.html#addRect">addRect</a></li>
+            
+                <li class="parent  " data-name="CompositeTilemap.clear"><a href="CompositeTilemap.html#clear">clear</a></li>
+            
+                <li class="parent  " data-name="CompositeTilemap.tile"><a href=CompositeTilemap.html#tile>tile</a></li>
+            
+                <li class="parent  " data-name="CompositeTilemap.tileAnimDivisor"><a href="CompositeTilemap.html#tileAnimDivisor">tileAnimDivisor</a></li>
+            
+                <li class="parent  " data-name="CompositeTilemap.tileAnimX"><a href="CompositeTilemap.html#tileAnimX">tileAnimX</a></li>
+            
+                <li class="parent  " data-name="CompositeTilemap.tileAnimY"><a href="CompositeTilemap.html#tileAnimY">tileAnimY</a></li>
+            
+                <li class="parent  " data-name="CompositeTilemap.tileRotate"><a href="CompositeTilemap.html#tileRotate">tileRotate</a></li>
+            
+                <li class="parent  " data-name="CompositeTilemap.tileset"><a href="CompositeTilemap.html#tileset">tileset</a></li>
+            
+            </ul>
+            
+            <ul class="events itemMembers">
+            
+            </ul>
+            
+        </li>
+    
+        <li class="item namespaceItem" data-name="GlTilemapAdaptor">
+            <span class="title  ">
+                
+                
+                    <a href=GlTilemapAdaptor.html>GlTilemapAdaptor</a>
+                
+            </span>
+
+            
+            <ul class="classes itemMembers">
+            
+            </ul>
+
+            
+            <ul class="members itemMembers">
+            
+            </ul>
+
+            <ul class="enums itemMembers">
+                
+            </ul>
+
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="methods itemMembers">
+            
+            </ul>
+            
+            <ul class="events itemMembers">
+            
+            </ul>
+            
+        </li>
+    
+        <li class="item namespaceItem" data-name="GpuTilemapAdaptor">
+            <span class="title  ">
+                
+                
+                    <a href=GpuTilemapAdaptor.html>GpuTilemapAdaptor</a>
+                
+            </span>
+
+            
+            <ul class="classes itemMembers">
+            
+            </ul>
+
+            
+            <ul class="members itemMembers">
+            
+            </ul>
+
+            <ul class="enums itemMembers">
+                
+            </ul>
+
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="methods itemMembers">
+            
+            </ul>
+            
+            <ul class="events itemMembers">
+            
+            </ul>
+            
+        </li>
+    
+        <li class="item namespaceItem" data-name="Tilemap">
+            <span class="title  ">
+                
+                
+                    <a href=Tilemap.html>Tilemap</a>
+                
+            </span>
+
+            
+            <ul class="classes itemMembers">
+            
+            </ul>
+
+            
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li class="parent " data-name="Tilemap.shadowColor"><a href="Tilemap.html#shadowColor">shadowColor</a></li>
+            
+                <li class="parent " data-name="Tilemap.tileAnim"><a href="Tilemap.html#tileAnim">tileAnim</a></li>
+            
+                <li class="parent " data-name="Tilemap.hasAnimatedTile"><a href="Tilemap.html#hasAnimatedTile">hasAnimatedTile</a></li>
+            
+                <li class="parent " data-name="Tilemap.tilemapBounds"><a href="Tilemap.html#tilemapBounds">tilemapBounds</a></li>
+            
+                <li class="parent " data-name="Tilemap.tileset"><a href="Tilemap.html#tileset">tileset</a></li>
+            
+            </ul>
+
+            <ul class="enums itemMembers">
+                
+            </ul>
+
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li class="parent  status-deprecated" data-name="Tilemap.addFrame"><a href="Tilemap.html#addFrame">addFrame</a></li>
+            
+                <li class="parent  status-deprecated" data-name="Tilemap.addRect"><a href="Tilemap.html#addRect">addRect</a></li>
+            
+                <li class="parent  " data-name="Tilemap.clear"><a href="Tilemap.html#clear">clear</a></li>
+            
+                <li class="parent  " data-name="Tilemap.destroy"><a href="Tilemap.html#destroy">destroy</a></li>
+            
+                <li class="parent  " data-name="Tilemap.getTileset"><a href="Tilemap.html#getTileset">getTileset</a></li>
+            
+                <li class="parent  " data-name="Tilemap.setTileset"><a href="Tilemap.html#setTileset">setTileset</a></li>
+            
+                <li class="parent  " data-name="Tilemap.tile"><a href="Tilemap.html#tile">tile</a></li>
+            
+                <li class="parent  " data-name="Tilemap.tileAnimDivisor"><a href="Tilemap.html#tileAnimDivisor">tileAnimDivisor</a></li>
+            
+                <li class="parent  " data-name="Tilemap.tileAnimX"><a href="Tilemap.html#tileAnimX">tileAnimX</a></li>
+            
+                <li class="parent  " data-name="Tilemap.tileAnimY"><a href="Tilemap.html#tileAnimY">tileAnimY</a></li>
+            
+                <li class="parent  " data-name="Tilemap.tileRotate"><a href="Tilemap.html#tileRotate">tileRotate</a></li>
+            
+            </ul>
+            
+            <ul class="events itemMembers">
+            
+            </ul>
+            
+        </li>
+    
+        <li class="item namespaceItem" data-name="TilemapAdaptor">
+            <span class="title  ">
+                
+                
+                    <a href=TilemapAdaptor.html>TilemapAdaptor</a>
+                
+            </span>
+
+            
+            <ul class="classes itemMembers">
+            
+            </ul>
+
+            
+            <ul class="members itemMembers">
+            
+            </ul>
+
+            <ul class="enums itemMembers">
+                
+            </ul>
+
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="methods itemMembers">
+            
+            </ul>
+            
+            <ul class="events itemMembers">
+            
+            </ul>
+            
+        </li>
+    
+        <li class="item namespaceItem" data-name="TilemapPipe">
+            <span class="title  ">
+                
+                
+                    <a href=TilemapPipe.html>TilemapPipe</a>
+                
+            </span>
+
+            
+            <ul class="classes itemMembers">
+            
+            </ul>
+
+            
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li class="parent " data-name="TilemapPipe.renderer"><a href="TilemapPipe.html#renderer">renderer</a></li>
+            
+                <li class="parent " data-name="TilemapPipe.tileAnim"><a href="TilemapPipe.html#tileAnim">tileAnim</a></li>
+            
+            </ul>
+
+            <ul class="enums itemMembers">
+                
+            </ul>
+
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li class="parent  " data-name="TilemapPipe.getShader"><a href="TilemapPipe.html#getShader">getShader</a></li>
+            
+            </ul>
+            
+            <ul class="events itemMembers">
+            
+            </ul>
+            
+        </li>
+    
+    </ul>
+</div>
+
+      <div class="main">
+        <h1 class="page-title" data-filename="CompositeTilemap.html">
+          Class: CompositeTilemap
+        </h1>
+        
+
+
+<section>
+
+<header>
+  <div class="header content-size">
+      <h2>
+        CompositeTilemap
+
+        
+      </h2>
+
+      
+          <div class="class-description"><p>A tilemap composite that lazily builds tilesets layered into multiple tilemaps.</p></div>
+      
+      
+          <div class="class-description"><p>The composite tileset is the concatenation of the individual tilesets used in the tilemaps. You can
+preinitialized it by passing a list of tile textures to the constructor. Otherwise, the composite tilemap
+is lazily built as you add more tiles with newer tile textures. A new tilemap is created once the last
+tilemap has reached its limit (as set by <a href=CompositeTilemap.html#texturesPerTilemap>texturesPerTilemap</a>).</p></div>
+      
+  </div>
+</header>
+
+<article class="content-size">
+    <div class="container-overview">
+        
+              
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="constructor">
+            <a class="share-icon" href="#constructor"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+              
+                  new CompositeTilemap
+              
+            </span>
+            <span class="signature">(tileset)</span><span class="type-signature"></span>
+            
+            
+            
+            
+        </h4>
+
+        
+    </div>
+</dt>
+<dd>
+    
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+            <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+            <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>tileset</code></td>
+            
+
+            <td class="type">
+            
+                Array&lt;TextureSource&gt;
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                <p>A list of tile base-textures that will be used to eagerly initialized the layered
+tilemaps. This is only an performance optimization, and using <a href=CompositeTilemap.html#tile>tile</a>
+will work equivalently.</p>
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+            
+        
+
+        
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            <h3>Example</h3>
+            
+    <pre class="prettyprint"><code> import { Application } from '@pixi/app';
+ import { CompositeTilemap } from '@pixi/tilemap';
+ import { Loader } from '@pixi/loaders';
+
+ // Setup view &amp; stage.
+ const app = new Application();
+
+ document.body.appendChild(app.renderer.view);
+ app.stage.interactive = true;
+
+ // Global reference to the tilemap.
+ let globalTilemap: CompositeTilemap;
+
+ // Load the tileset spritesheet!
+ Loader.shared.load('atlas.json');
+
+ // Initialize the tilemap scene when the assets load.
+ Loader.shared.load(function onTilesetLoaded()
+ {
+      const tilemap = new CompositeTilemap();
+
+      // Setup the game level with grass and dungeons!
+      for (let x = 0; x &lt; 10; x++)
+      {
+          for (let y = 0; y &lt; 10; y++)
+          {
+              tilemap.tile(
+                  x % 2 === 0 &amp;&amp; (x === y || x + y === 10) ? 'dungeon.png' : 'grass.png',
+                  x * 100,
+                  y * 100,
+              );
+          }
+      }
+
+      globalTilemap = app.stage.addChild(tilemap);
+ });
+
+ // Show a bomb at a random location whenever the user clicks!
+ app.stage.on('click', function onClick()
+ {
+      if (!globalTilemap) return;
+
+      const x = Math.floor(Math.random() * 10);
+      const y = Math.floor(Math.random() * 10);
+
+      globalTilemap.tile('bomb.png', x * 100, y * 100);
+ });</code></pre>
+
+        
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        <ul>
+          
+            <li>Container</li>
+          
+        </ul>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="setBitmaps">
+            <a class="share-icon" href="#setBitmaps"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="status-deprecated">setBitmaps</span>
+            <span class="type-signature"></span>
+            
+                <span class="access-signature deprecated">Deprecated
+                    : <span class="deprecated-info">Since @pixi/tilemap 3.</span>
+                    
+                </span>
+            
+            
+            
+            
+        </h4>
+    </div>
+</dt>
+<dd>
+    
+      <p class="description"><p>Alias for <a href=CompositeTilemap.html#tileset>tileset</a>.</p></p>
+    
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="texPerChild">
+            <a class="share-icon" href="#texPerChild"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="status-deprecated">texPerChild</span>
+            <span class="type-signature type">number</span>
+            
+                <span class="access-signature deprecated">Deprecated
+                    : <span class="deprecated-info">Since @pixi/tilemap 3.</span>
+                    
+                </span>
+            
+            <span class="access-signature">readonly</span>
+            
+            
+        </h4>
+    </div>
+</dt>
+<dd>
+    
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="CompositeTilemap.html#texturesPerTilemap">texturesPerTilemap</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="texturesPerTilemap">
+            <a class="share-icon" href="#texturesPerTilemap"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">texturesPerTilemap</span>
+            <span class="type-signature type">number</span>
+            
+            <span class="access-signature">readonly</span>
+            
+            
+        </h4>
+    </div>
+</dt>
+<dd>
+    
+      <p class="description"><p>The hard limit on the number of tile textures used in each tilemap.</p></p>
+    
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="tileAnim">
+            <a class="share-icon" href="#tileAnim"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">tileAnim</span>
+            <span class="type-signature type">[number, number]</span>
+            
+            
+            
+            
+        </h4>
+    </div>
+</dt>
+<dd>
+    
+      <p class="description"><p>The animation frame vector.</p></p>
+    
+    
+    <div class="description">
+        <p>Animated tiles have four parameters - <code>animX</code>, <code>animY</code>, <code>animCountX</code>, <code>animCountY</code>. The textures
+of adjacent animation frames are at offset <code>animX</code> or <code>animY</code> of each other, with <code>animCountX</code> per
+row and <code>animCountY</code> per column.</p>
+<p>The animation frame vector specifies which animation frame texture to use. If the x/y coordinate is
+larger than the <code>animCountX</code> or <code>animCountY</code> for a specific tile, the modulus is taken.</p>
+    </div>
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>undefined</li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="lastModifiedTilemap">
+            <a class="share-icon" href="#lastModifiedTilemap"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">lastModifiedTilemap</span>
+            <span class="type-signature type"><a href="Tilemap.html">Tilemap</a></span>
+            
+            <span class="access-signature">protected</span>
+            
+            
+        </h4>
+    </div>
+</dt>
+<dd>
+    
+      <p class="description"><p>The last modified tilemap.</p></p>
+    
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-default">Default Value:</dt>
+    <dd class="tag-default"><ul class="dummy"><li>undefined</li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+</dd>
+
+        
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="addFrame">
+            <a class="share-icon" href="#addFrame"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="status-deprecated">
+              
+                  addFrame
+              
+            </span>
+            <span class="signature">(texture, x, y, animX, animY, animWidth, animHeight, animDivisor, alpha)</span><span class="type-signature"> this</span>
+            
+                <span class="access-signature deprecated">Deprecated``
+                    : <span class="deprecated-info">Since @pixi/tilemap 3.</span>
+                    
+                </span>
+            
+            
+            
+            
+        </h4>
+
+        
+    </div>
+</dt>
+<dd>
+    
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+            <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+            <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>texture</code></td>
+            
+
+            <td class="type">
+            
+                Texture | string | number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>animX</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>animY</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>animWidth</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>animHeight</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>animDivisor</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>alpha</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="CompositeTilemap.html#tile">tile</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+      <h5>Returns:</h5>
+      
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    this
+            
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="addRect">
+            <a class="share-icon" href="#addRect"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="status-deprecated">
+              
+                  addRect
+              
+            </span>
+            <span class="signature">(textureIndex, u, v, x, y, tileWidth, tileHeight, animX, animY, rotate, animWidth, animHeight)</span><span class="type-signature"> this</span>
+            
+                <span class="access-signature deprecated">Deprecated``
+                    : <span class="deprecated-info">@pixi/tilemap 3</span>
+                    
+                </span>
+            
+            
+            
+            
+        </h4>
+
+        
+    </div>
+</dt>
+<dd>
+    
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+            <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+            <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>textureIndex</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>u</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>v</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>tileWidth</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>tileHeight</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>animX</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>animY</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>rotate</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>animWidth</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>animHeight</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href=CompositeTilemap.html#tile>tile</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+      <h5>Returns:</h5>
+      
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    this
+            
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="clear">
+            <a class="share-icon" href="#clear"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+              
+                  clear
+              
+            </span>
+            <span class="signature">()</span><span class="type-signature"> this</span>
+            
+            
+            
+            
+        </h4>
+
+        
+    </div>
+</dt>
+<dd>
+    
+      <p class="description"><p>Clears the tilemap composite.</p></p>
+    
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+      <h5>Returns:</h5>
+      
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    this
+            
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="tile">
+            <a class="share-icon" href="#tile"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+              
+                  tile
+              
+            </span>
+            <span class="signature">(tileTexture, x, y, options)</span><span class="type-signature"> this</span>
+            
+            
+            
+            
+        </h4>
+
+        
+    </div>
+</dt>
+<dd>
+    
+      <p class="description"><p>Adds a tile that paints the given tile texture at (x, y).</p></p>
+    
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+            <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+            <th>Attributes</th>
+        
+
+        
+            <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>tileTexture</code></td>
+            
+
+            <td class="type">
+            
+                Texture | string | number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                    
+                </td>
+            
+
+            <td class="description last">
+                <p>The tile texture. You can pass an index into the composite tilemap as well.</p>
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                    
+                </td>
+            
+
+            <td class="description last">
+                <p>The local x-coordinate of the tile's location.</p>
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                    
+                </td>
+            
+
+            <td class="description last">
+                <p>The local y-coordinate of the tile's location.</p>
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                {<br/>&nbsp;&nbsp;&nbsp;<span class="hljs-attr">u?</span>: number,<br/>&nbsp;&nbsp;&nbsp;<span class="hljs-attr">v?</span>: number,<br/>&nbsp;&nbsp;&nbsp;<span class="hljs-attr">tileWidth?</span>: number,<br/>&nbsp;&nbsp;&nbsp;<span class="hljs-attr">tileHeight?</span>: number,<br/>&nbsp;&nbsp;&nbsp;<span class="hljs-attr">animX?</span>: number,<br/>&nbsp;&nbsp;&nbsp;<span class="hljs-attr">animY?</span>: number,<br/>&nbsp;&nbsp;&nbsp;<span class="hljs-attr">rotate?</span>: number,<br/>&nbsp;&nbsp;&nbsp;<span class="hljs-attr">animCountX?</span>: number,<br/>&nbsp;&nbsp;&nbsp;<span class="hljs-attr">animCountY?</span>: number,<br/>&nbsp;&nbsp;&nbsp;<span class="hljs-attr">animDivisor?</span>: number,<br/>&nbsp;&nbsp;&nbsp;<span class="hljs-attr">alpha?</span>: number<br/>}
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                    
+                </td>
+            
+
+            <td class="description last">
+                <p>Additional options to pass to <a href=Tilemap.html#tile>tile</a>.</p>
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>options.u</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                    
+                        texture.frame.x
+                    
+                </td>
+            
+
+            <td class="description last">
+                <p>The x-coordinate of the texture in its base-texture's space.</p>
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>options.v</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                    
+                        texture.frame.y
+                    
+                </td>
+            
+
+            <td class="description last">
+                <p>The y-coordinate of the texture in its base-texture's space.</p>
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>options.tileWidth</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                    
+                        texture.orig.width
+                    
+                </td>
+            
+
+            <td class="description last">
+                <p>The local width of the tile.</p>
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>options.tileHeight</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                    
+                        texture.orig.height
+                    
+                </td>
+            
+
+            <td class="description last">
+                <p>The local height of the tile.</p>
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>options.animX</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                    
+                        0
+                    
+                </td>
+            
+
+            <td class="description last">
+                <p>For animated tiles, this is the &quot;offset&quot; along the x-axis for adjacent
+animation frame textures in the base-texture.</p>
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>options.animY</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                    
+                        0
+                    
+                </td>
+            
+
+            <td class="description last">
+                <p>For animated tiles, this is the &quot;offset&quot; along the y-axis for adjacent
+animation frames textures in the base-texture.</p>
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>options.rotate</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                    
+                        0
+                    
+                </td>
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>options.animCountX</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                    
+                        1024
+                    
+                </td>
+            
+
+            <td class="description last">
+                <p>For animated tiles, this is the number of animation frame textures
+per row.</p>
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>options.animCountY</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                    
+                        1024
+                    
+                </td>
+            
+
+            <td class="description last">
+                <p>For animated tiles, this is the number of animation frame textures
+per column.</p>
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>options.animDivisor</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                    
+                        1
+                    
+                </td>
+            
+
+            <td class="description last">
+                <p>For animated tiles, this is the animation duration each frame</p>
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>options.alpha</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                    
+                        1
+                    
+                </td>
+            
+
+            <td class="description last">
+                <p>Tile alpha</p>
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+      <h5>Returns:</h5>
+      
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    this
+            
+            </td>
+            <td class="description last">This tilemap, good for chaining.</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="tileAnimDivisor">
+            <a class="share-icon" href="#tileAnimDivisor"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+              
+                  tileAnimDivisor
+              
+            </span>
+            <span class="signature">(divisor)</span><span class="type-signature"> this</span>
+            
+            
+            
+            
+        </h4>
+
+        
+    </div>
+</dt>
+<dd>
+    
+      <p class="description"><p>Changes <code>tileAnimDivisor</code> value of the last added tile.</p></p>
+    
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+            <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>divisor</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+      <h5>Returns:</h5>
+      
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    this
+            
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="tileAnimX">
+            <a class="share-icon" href="#tileAnimX"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+              
+                  tileAnimX
+              
+            </span>
+            <span class="signature">(offset, count)</span><span class="type-signature"> this</span>
+            
+            
+            
+            
+        </h4>
+
+        
+    </div>
+</dt>
+<dd>
+    
+      <p class="description"><p>Changes <code>animX</code>, <code>animCountX</code> of the last added tile.</p></p>
+    
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+            <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>offset</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>count</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+      <h5>Returns:</h5>
+      
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    this
+            
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="tileAnimY">
+            <a class="share-icon" href="#tileAnimY"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+              
+                  tileAnimY
+              
+            </span>
+            <span class="signature">(offset, count)</span><span class="type-signature"> this</span>
+            
+            
+            
+            
+        </h4>
+
+        
+    </div>
+</dt>
+<dd>
+    
+      <p class="description"><p>Changes <code>animY</code>, <code>animCountY</code> of the last added tile.</p></p>
+    
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+            <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>offset</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+
+        <tr>
+            
+                <td class="name"><code>count</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+      <h5>Returns:</h5>
+      
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    this
+            
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="tileRotate">
+            <a class="share-icon" href="#tileRotate"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+              
+                  tileRotate
+              
+            </span>
+            <span class="signature">(rotate)</span><span class="type-signature"> this</span>
+            
+            
+            
+            
+        </h4>
+
+        
+    </div>
+</dt>
+<dd>
+    
+      <p class="description"><p>Changes the rotation of the last added tile.</p></p>
+    
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+            <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>rotate</code></td>
+            
+
+            <td class="type">
+            
+                number
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+      <h5>Returns:</h5>
+      
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    this
+            
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="tileset">
+            <a class="share-icon" href="#tileset"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+              
+                  tileset
+              
+            </span>
+            <span class="signature">(tileTextures)</span><span class="type-signature"> this</span>
+            
+            
+            
+            
+        </h4>
+
+        
+    </div>
+</dt>
+<dd>
+    
+      <p class="description"><p>This will preinitialize the tilesets of the layered tilemaps.</p></p>
+    
+    
+    <div class="description">
+        <p>If used after a tilemap has been created (or a tile added), this will overwrite the tile textures of the
+existing tilemaps. Passing the tileset to the constructor instead is the best practice.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+            <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>tileTextures</code></td>
+            
+
+            <td class="type">
+            
+                Array&lt;TextureSource&gt;
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <p>The list of tile textures that make up the tileset.</p>
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+      <h5>Returns:</h5>
+      
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                    this
+            
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+    
+
+    
+</dd>
+
+        
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+        
+
+        <footer class="content-size">
+          <div class="footer">
+            Documentation generated by
+            <a href="https://github.com/webdoc-js/webdoc"
+              >Webdoc
+              1</a
+            >
+            on
+            Sun Jul 13 2025 20:24:21 GMT-0400 (Eastern Daylight Time)
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script>
+      prettyPrint();
+    </script>
+    <script src="main.js"></script>
+    
+    
+
+    <script src="scripts/linenumber.js"></script>
+  </body>
+</html>
