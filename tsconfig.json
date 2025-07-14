@@ -1,8 +1,7 @@
 {
     "extends": "@pixi/extension-scripts/tsconfig",
     "compilerOptions": {
-        // TODO: Remove this when null checks are strict
-        "strictNullChecks": false
+        "strictNullChecks":true
     },
     "include": [
         "src/**/*"

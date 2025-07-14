@@ -16,11 +16,11 @@ export class TileTextureArray
     count = 0;
     dirty = false;
     dirty_gpu = false;
-    bind_group: BindGroup = null;
+    bind_group: BindGroup | null = null;
     bind_group_resources: any = {};
-    tex_sizes: Float32Array = null;
+    tex_sizes: Float32Array;
     null_color: Float32Array = new Float32Array([0, 0, 0, 0.5]);
-    tex_buf: Buffer = null;
+    tex_buf: Buffer;
 
     get length()
     {
